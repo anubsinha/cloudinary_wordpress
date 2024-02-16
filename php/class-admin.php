@@ -279,7 +279,7 @@ class Admin {
 					'page'    => $this->plugin->slug,
 					'section' => 'wizard',
 				);
-				$url  = add_query_arg( $args, 'admin.php' );
+				$url  = add_query_arg( $args, admin_url('admin.php'));
 				wp_safe_redirect( $url );
 				exit;
 			}
